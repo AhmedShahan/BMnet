@@ -1,0 +1,189 @@
+✓ Initialized. View run at https://modal.com/apps/digital-twin/main/ap-CZK5QdZbHaGGYwni5O7u9L
+Building image im-dYdXpol64j8dfCnkG2Np0u
+
+=> Step 0: FROM base
+
+=> Step 1: RUN python -m pip install numpy pandas pillow scipy
+Looking in indexes: http://pypi-mirror.modal.local:5555/simple
+Collecting numpy
+  Downloading http://pypi-mirror.modal.local:5555/simple/numpy/numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Collecting pandas
+  Downloading http://pypi-mirror.modal.local:5555/simple/pandas/pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (91 kB)
+Collecting pillow
+  Downloading http://pypi-mirror.modal.local:5555/simple/pillow/pillow-12.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting scipy
+  Downloading http://pypi-mirror.modal.local:5555/simple/scipy/scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading http://pypi-mirror.modal.local:5555/simple/python-dateutil/python_dateutil-3.0.0-py2.py3-none-any.whl.metadata (8.2 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading http://pypi-mirror.modal.local:5555/simple/pytz/pytz-2026.6-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading http://pypi-mirror.modal.local:5555/simple/tzdata/tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting six>=1.6 (from python-dateutil>=2.8.2->pandas)
+  Downloading http://pypi-mirror.modal.local:5555/simple/six/six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/numpy/numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.8/16.8 MB 194.5 MB/s eta 0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/pandas/pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 283.2 MB/s eta 0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/pillow/pillow-12.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 165.9 MB/s eta 0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/scipy/scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 37.7/37.7 MB 288.0 MB/s eta 0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/python-dateutil/python_dateutil-3.0.0-py2.py3-none-any.whl (94 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/pytz/pytz-2026.6-py2.py3-none-any.whl (506 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/six/six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/tzdata/tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Installing collected packages: pytz, tzdata, six, pillow, numpy, scipy, python-dateutil, pandas
+
+Successfully installed numpy-2.2.6 pandas-2.3.3 pillow-12.3.0 python-dateutil-3.0.0 pytz-2026.6 scipy-1.15.3 six-1.17.0 tzdata-2026.6
+
+[notice] A new release of pip is available: 25.1.1 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+Saving image...
+Image saved, took 1.58s
+
+Built image im-dYdXpol64j8dfCnkG2Np0u in 16.81s
+
+
+✓ Created objects.
+├── ✓ Uploaded /media/shahanahmed/c229a233-ed4f-4f67-9e09-5890e65956f72/BMnet/Real_testing/inspect_nomo2.py
+└── ✓ Created Function inspect2.
+subjects: 4149 {'female': 2675, 'male': 1474}
+
+===== measurement values (as stored) =====
+                            n_valid     min       p5   median      p95      max
+Seat_Back_Angle                4149     2.0    12.00    20.00    27.00   168.00
+Outseam                        4143   811.0   926.00  1014.00  1117.90  1289.00
+Inseam                         4149   613.0   701.00   780.00   881.00  1025.00
+CROTCH_Height                  4149   596.0   686.00   768.00   870.00  1018.00
+TrouserWAIST_Circ              4143   640.0   738.00   892.00  1092.00  1418.00
+HIP_Circ                       4149   537.0   912.00  1017.00  1177.60  1462.00
+Knee_Height                    4149   200.0   260.00   300.00   340.00   470.00
+Calf_Height                    4149   280.0   385.00   435.00   495.00   630.00
+Waist_Height_Back_EZ           2673   838.0   942.00  1025.00  1123.00  1251.00
+TrouserWaist_Height_Back       4144   812.0   948.00  1036.00  1148.00  2230.00
+CrotchLength_Back              4143   148.0   307.00   357.00   419.00   532.00
+CrotchLength_Front             4142   125.0   240.00   289.00   349.00   470.00
+Ankle_Circ                     4149    -1.0   225.11   258.31   317.89   487.03
+Head_Top_Height                4149  1325.0  1495.00  1646.00  1819.60  1988.00
+Hip_Height                     2675   660.0   771.00   841.00   931.30  1202.00
+NeckBase_Circ                  4045   255.0   333.00   388.00   480.00   851.00
+Bust_to_Bust                   2671    35.0   150.00   189.00   230.00   418.00
+Underbust_Circ                 2672   631.0   726.00   820.00  1019.00  1309.00
+BUST_Circ                      2672   742.0   850.00   964.00  1171.45  1758.00
+Across_Back                    4147   185.0   304.00   364.00   443.00   549.00
+Shoulder_to_Shoulder           4149   109.0   332.40   412.00   495.00   601.00
+Neck_Circ                      3880   251.0   307.00   362.00   458.00   747.00
+Knee_Circ                      4149    -1.0   340.00   381.00   441.00   651.00
+Calf_Circ                      4149   172.0   327.00   372.00   434.00   607.00
+Bicep_Circ                     4149   147.0   265.00   319.00   395.00   539.00
+Elbow_Circ                     4149    -1.0   219.00   257.00   313.00   449.00
+Wrist_Circ                     4149    -1.0   141.00   163.00   193.00   690.00
+Shoulder_to_Wrist              4149 -9998.0   450.20   576.00   654.00   782.00
+Shoulder_Length                4149    15.0    89.00   131.00   165.00  5868.00
+SideNeck_to_Bust               2675    -1.0   219.00   278.00   333.00   459.00
+NeckSide_to_Wrist              2675 -9982.0 -4640.30   679.00   747.00  6501.00
+NECK_Height                    4047   706.0  1339.00  1462.00  1636.00  1868.00
+Thigh_Circ                     4149   156.0   506.00   581.00   691.00   848.00
+Across_Front                   4148    80.0   290.35   386.00   465.00   704.00
+Shoulder_to_floor_Right        2675  1084.0  1270.70  1365.00  1485.00  1656.00
+Shoulder_to_floor_Left         2675  1031.0  1272.00  1367.00  1485.00  1629.00
+TopHip_Circ                    2675   624.0   808.00   944.00  1174.30  1537.00
+TrouserWaist_Height_Front      4144   781.0   902.00   998.00  1127.00  1334.00
+Bust_Height                    2672   973.0  1097.00  1193.50  1301.45  1442.00
+Torso_Height                   2675 -5891.0   568.00   673.00   728.00   845.00
+Istumakorkeus                  2675 -2356.0   227.00   269.00   291.00   338.00
+NaturalWAIST_Circ              2578   606.0   690.00   827.00  1079.00  1382.00
+NaturalWaist_Height            2578   706.0   941.00  1021.00  1116.15  1221.00
+Thigh_Height                   4149    30.0    30.00    40.00    45.00    50.00
+Ankle_Height                   4149   536.0   614.00   689.00   789.00  5880.00
+Shoulder_Width_ThruTheBody     2675   109.0   276.00   339.00   384.00   497.00
+Overarm_Width_ThruTheBody      4149   115.0   367.00   431.00   509.00   850.00
+Hip_2_Width_ThruTheBody        2673   298.0   358.00   398.00   455.00   531.00
+Hip_2_Circ                     2675   821.0   922.00  1031.00  1200.30  1525.00
+Hip_2_Height                   2675   601.0   695.00   765.00   864.00  1008.00
+Calf_Left                      1473   281.0   341.00   383.00   437.00   508.00
+Calf_Right                     1473   285.0   343.00   385.00   437.00   512.00
+CHEST_Circ                     1471   787.0   932.50  1078.00  1248.00  1387.00
+MaxWAIST_Circ                  1471   633.0   779.00   946.00  1180.00  1425.00
+Shoulder_Slope_Left            1466    12.0    37.00    56.00    72.00   100.00
+Shoulder_Slope_Right           1465     8.0    36.00    56.00    74.00   131.00
+Joints                         1474    15.0    18.00    18.00    18.00    18.00
+Landmarks                      1474    18.0    27.00    27.00    27.00    27.00
+MaxWaist_Height                1471   859.0   997.00  1096.00  1212.00  1336.00
+Ankle_Girth_Left               1451    40.0   246.00   273.00   309.00   488.00
+Ankle_Girth_Right              1452    28.0   245.55   274.00   310.00   539.00
+Shoulder_Width_thruTheBody     1474   239.0   348.65   391.00   435.00   601.00
+Hip_Width_ThruTheBody          1471   313.0   361.00   396.00   440.50   525.00
+
+fields valid for ALL subjects: 20 of 63
+
+===== rendered_rgb.zip : 40690 files =====
+  2612  rendered_rgb/female/front/blurryBG/female_N.png
+  2612  rendered_rgb/female/front/clearBG/female_N.png
+  2612  rendered_rgb/female/front/noiseBG/female_N.png
+  2612  rendered_rgb/female/front/silh/female_N.png
+  2612  rendered_rgb/female/front/woBG/female_N.png
+  2612  rendered_rgb/female/side/blurryBG/female_N.png
+  2612  rendered_rgb/female/side/clearBG/female_N.png
+  2612  rendered_rgb/female/side/noiseBG/female_N.png
+  2612  rendered_rgb/female/side/silh/female_N.png
+  2612  rendered_rgb/female/side/woBG/female_N.png
+  1457  rendered_rgb/male/front/blurryBG/male_N.png
+  1457  rendered_rgb/male/front/clearBG/male_N.png
+  1457  rendered_rgb/male/front/noiseBG/male_N.png
+  1457  rendered_rgb/male/front/silh/male_N.png
+  1457  rendered_rgb/male/front/woBG/male_N.png
+  1457  rendered_rgb/male/side/blurryBG/male_N.png
+  1457  rendered_rgb/male/side/clearBG/male_N.png
+  1457  rendered_rgb/male/side/noiseBG/male_N.png
+  1457  rendered_rgb/male/side/silh/male_N.png
+  1457  rendered_rgb/male/side/woBG/male_N.png
+
+folders:
+  2612  rendered_rgb/female/front/blurryBG
+  2612  rendered_rgb/female/front/clearBG
+  2612  rendered_rgb/female/front/noiseBG
+  2612  rendered_rgb/female/front/silh
+  2612  rendered_rgb/female/front/woBG
+  2612  rendered_rgb/female/side/blurryBG
+  2612  rendered_rgb/female/side/clearBG
+  2612  rendered_rgb/female/side/noiseBG
+  2612  rendered_rgb/female/side/silh
+  2612  rendered_rgb/female/side/woBG
+  1457  rendered_rgb/male/front/blurryBG
+  1457  rendered_rgb/male/front/clearBG
+  1457  rendered_rgb/male/front/noiseBG
+  1457  rendered_rgb/male/front/silh
+  1457  rendered_rgb/male/front/woBG
+  1457  rendered_rgb/male/side/blurryBG
+  1457  rendered_rgb/male/side/clearBG
+  1457  rendered_rgb/male/side/noiseBG
+  1457  rendered_rgb/male/side/silh
+  1457  rendered_rgb/male/side/woBG
+
+sample sizes:
+  rendered_rgb/female/side/clearBG: female_1739.png  size=(200, 480) mode=RGB
+  rendered_rgb/female/side/noiseBG: female_1739.png  size=(200, 480) mode=RGB
+  rendered_rgb/female/side/silh: female_1739.png  size=(200, 480) mode=L
+  rendered_rgb/female/side/woBG: female_1739.png  size=(200, 480) mode=RGB
+  rendered_rgb/female/side/blurryBG: female_1739.png  size=(200, 480) mode=RGB
+  rendered_rgb/female/front/clearBG: female_1739.png  size=(200, 480) mode=RGB
+  rendered_rgb/female/front/noiseBG: female_1739.png  size=(200, 480) mode=RGB
+  rendered_rgb/female/front/silh: female_1739.png  size=(200, 480) mode=L
+  rendered_rgb/female/front/woBG: female_1739.png  size=(200, 480) mode=RGB
+  rendered_rgb/female/front/blurryBG: female_1739.png  size=(200, 480) mode=RGB
+  rendered_rgb/male/side/clearBG: male_0468.png  size=(200, 480) mode=RGB
+  rendered_rgb/male/side/noiseBG: male_0468.png  size=(200, 480) mode=RGB
+  rendered_rgb/male/side/silh: male_0468.png  size=(200, 480) mode=L
+  rendered_rgb/male/side/woBG: male_0468.png  size=(200, 480) mode=RGB
+  rendered_rgb/male/side/blurryBG: male_0468.png  size=(200, 480) mode=RGB
+  rendered_rgb/male/front/clearBG: male_0468.png  size=(200, 480) mode=RGB
+  rendered_rgb/male/front/noiseBG: male_0468.png  size=(200, 480) mode=RGB
+  rendered_rgb/male/front/silh: male_0468.png  size=(200, 480) mode=L
+  rendered_rgb/male/front/woBG: male_0468.png  size=(200, 480) mode=RGB
+  rendered_rgb/male/front/blurryBG: male_0468.png  size=(200, 480) mode=RGB
+
+image subjects: 4069 | mat subjects: 4149 | in both: 4069
+Stopping app - local entrypoint completed.
+✓ App completed. View run at https://modal.com/apps/digital-twin/main/ap-CZK5QdZbHaGGYwni5O7u9L

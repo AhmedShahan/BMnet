@@ -1,0 +1,226 @@
+✓ Initialized. View run at https://modal.com/apps/digital-twin/main/ap-Q03IAOoqctKVFRWQb0uwFB
+Building image im-LwrhIJ7gK9VQvsyzQ83SGH
+
+=> Step 0: FROM base
+
+=> Step 1: RUN python -m pip install numpy scipy
+Looking in indexes: http://pypi-mirror.modal.local:5555/simple
+Collecting numpy
+  Downloading http://pypi-mirror.modal.local:5555/simple/numpy/numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Collecting scipy
+  Downloading http://pypi-mirror.modal.local:5555/simple/scipy/scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/numpy/numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.8/16.8 MB 1.4 GB/s eta 0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/scipy/scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 37.7/37.7 MB 1.2 GB/s eta 0:00:00
+Installing collected packages: numpy, scipy
+
+Successfully installed numpy-2.2.6 scipy-1.15.3
+
+[notice] A new release of pip is available: 25.1.1 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+Saving image...
+Image saved, took 1.68s
+
+Built image im-LwrhIJ7gK9VQvsyzQ83SGH in 7.25s
+
+
+Building image im-p8FpAUF0cXqRi2ohF2DHYz
+
+=> Step 0: FROM base
+
+=> Step 1: RUN apt-get update
+Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages.diff/Index [21.8 kB]
+Ign:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages.diff/Index
+Get:6 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+Get:7 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [366 kB]
+Fetched 9426 kB in 1s (9082 kB/s)
+Reading package lists...
+
+=> Step 2: RUN apt-get install -y curl
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libcurl4 libnghttp2-14 libpsl5 librtmp1 libssh2-1 publicsuffix
+The following NEW packages will be installed:
+  curl libcurl4 libnghttp2-14 libpsl5 librtmp1 libssh2-1 publicsuffix
+0 upgraded, 7 newly installed, 0 to remove and 68 not upgraded.
+Need to get 1202 kB of archives.
+After this operation, 2543 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bookworm/main amd64 libnghttp2-14 amd64 1.52.0-1+deb12u3 [72.4 kB]
+Get:2 http://deb.debian.org/debian bookworm/main amd64 libpsl5 amd64 0.21.2-1 [58.7 kB]
+Get:3 http://deb.debian.org/debian bookworm/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b2 [60.8 kB]
+Get:4 http://deb.debian.org/debian-security bookworm-security/main amd64 libssh2-1 amd64 1.10.0-3+deb12u1 [176 kB]
+Get:5 http://deb.debian.org/debian bookworm/main amd64 libcurl4 amd64 7.88.1-10+deb12u15 [392 kB]
+Get:6 http://deb.debian.org/debian bookworm/main amd64 curl amd64 7.88.1-10+deb12u15 [316 kB]
+Get:7 http://deb.debian.org/debian bookworm/main amd64 publicsuffix all 20230209.2326-1 [126 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 1202 kB in 0s (38.8 MB/s)
+Selecting previously unselected package libnghttp2-14:amd64.
+(Reading database ... 
+[1A(Reading database ... 5%
+[1A(Reading database ... 10%
+[1A(Reading database ... 15%
+[1A(Reading database ... 20%
+[1A(Reading database ... 25%
+[1A(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%
+[1A(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%
+[1A(Reading database ... 95%(Reading database ... 100%(Reading database ... 16439 files and directories currently installed.)
+Preparing to unpack .../0-libnghttp2-14_1.52.0-1+deb12u3_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.52.0-1+deb12u3) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../1-libpsl5_0.21.2-1_amd64.deb ...
+Unpacking libpsl5:amd64 (0.21.2-1) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../2-librtmp1_2.4+20151223.gitfa8646d.1-2+b2_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../3-libssh2-1_1.10.0-3+deb12u1_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.10.0-3+deb12u1) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../4-libcurl4_7.88.1-10+deb12u15_amd64.deb ...
+Unpacking libcurl4:amd64 (7.88.1-10+deb12u15) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../5-curl_7.88.1-10+deb12u15_amd64.deb ...
+Unpacking curl (7.88.1-10+deb12u15) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../6-publicsuffix_20230209.2326-1_all.deb ...
+Unpacking publicsuffix (20230209.2326-1) ...
+Setting up libpsl5:amd64 (0.21.2-1) ...
+Setting up libnghttp2-14:amd64 (1.52.0-1+deb12u3) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Setting up libssh2-1:amd64 (1.10.0-3+deb12u1) ...
+Setting up publicsuffix (20230209.2326-1) ...
+Setting up libcurl4:amd64 (7.88.1-10+deb12u15) ...
+Setting up curl (7.88.1-10+deb12u15) ...
+Processing triggers for libc-bin (2.36-9+deb12u10) ...
+Saving image...
+Image saved, took 1.77s
+
+Built image im-p8FpAUF0cXqRi2ohF2DHYz in 5.76s
+
+
+✓ Created objects.
+├── ✓ Uploaded /media/shahanahmed/c229a233-ed4f-4f67-9e09-5890e65956f72/BMnet/Real_testing/inspect_fits.py
+└── ✓ Created Function inspect_fits.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A  0  601M    0 94764    0     0   103k      0  1:39:39 --:--:--  1:39:39  102k
+[1A
+[1A
+[1A
