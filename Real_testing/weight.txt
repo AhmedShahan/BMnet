@@ -1,0 +1,48 @@
+✓ Initialized. View run at https://modal.com/apps/digital-twin/main/ap-oXkacZR6BizvLGuEwsp456
+Building image im-XAguVq8rIirjfJ0B9dVo4O
+
+=> Step 0: FROM base
+
+=> Step 1: RUN python -m pip install numpy pandas
+Looking in indexes: http://pypi-mirror.modal.local:5555/simple
+Collecting numpy
+  Downloading http://pypi-mirror.modal.local:5555/simple/numpy/numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Collecting pandas
+  Downloading http://pypi-mirror.modal.local:5555/simple/pandas/pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (91 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading http://pypi-mirror.modal.local:5555/simple/python-dateutil/python_dateutil-3.0.0-py2.py3-none-any.whl.metadata (8.2 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading http://pypi-mirror.modal.local:5555/simple/pytz/pytz-2026.6-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading http://pypi-mirror.modal.local:5555/simple/tzdata/tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting six>=1.6 (from python-dateutil>=2.8.2->pandas)
+  Downloading http://pypi-mirror.modal.local:5555/simple/six/six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/numpy/numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.8/16.8 MB 147.1 MB/s eta 0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/pandas/pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 656.1 MB/s eta 0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/python-dateutil/python_dateutil-3.0.0-py2.py3-none-any.whl (94 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/pytz/pytz-2026.6-py2.py3-none-any.whl (506 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/six/six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/tzdata/tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Installing collected packages: pytz, tzdata, six, numpy, python-dateutil, pandas
+
+Successfully installed numpy-2.2.6 pandas-2.3.3 python-dateutil-3.0.0 pytz-2026.6 six-1.17.0 tzdata-2026.6
+
+[notice] A new release of pip is available: 25.1.1 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+Saving image...
+Image saved, took 1.37s
+
+Built image im-XAguVq8rIirjfJ0B9dVo4O in 11.78s
+
+
+✓ Created objects.
+├── ✓ Uploaded /media/shahanahmed/c229a233-ed4f-4f67-9e09-5890e65956f72/BMnet/Real_testing/weight_from_mesh.py
+└── ✓ Created Function run.
+template: 6890 vertices, 13776 faces | edges used once: 0, twice: 20664, >2: 0
+  500/4132 meshes
+  1000/4132 meshes
+  1500/4132 meshes
+  2000/4132 meshes
+  2500/4132 meshes
