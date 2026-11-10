@@ -46,3 +46,33 @@ template: 6890 vertices, 13776 faces | edges used once: 0, twice: 20664, >2: 0
   1500/4132 meshes
   2000/4132 meshes
   2500/4132 meshes
+  3000/4132 meshes
+  3500/4132 meshes
+  4000/4132 meshes
+
+meshes with identical face list to template: 4132/4132
+negative-signed volumes (inward normals): 0
+
+meshes: 4132 | with mat: 4132 | with images: 4069 | ALL THREE: 4069
+{'female': 2612, 'male': 1457}
+
+===== female (all three, n=2612) =====
+                 min     5%    50%    95%     max
+volume_L       35.81  50.29  64.87  94.81  150.40
+weight_kg      36.17  50.79  65.52  95.76  151.91
+mesh_height_m   1.41   1.54   1.65   1.77    1.95
+BMI            15.75  19.36  23.98  34.11   49.13
+
+===== male (all three, n=1457) =====
+                 min     5%    50%     95%     max
+volume_L       42.95  62.92  82.07  108.40  155.38
+weight_kg      43.38  63.55  82.89  109.48  156.94
+mesh_height_m   1.46   1.64   1.77    1.91    2.13
+BMI            16.53  21.17  26.14   33.88   49.73
+
+mesh height minus Head_Top_Height (cm): median 3.97 | p5 -0.83 | p95 9.18 | |diff|>3cm: 2681
+BMI outside 15-45: 13 of 4069
+
+saved /nomo/weight_estimates.csv
+Stopping app - local entrypoint completed.
+✓ App completed. View run at https://modal.com/apps/digital-twin/main/ap-oXkacZR6BizvLGuEwsp456

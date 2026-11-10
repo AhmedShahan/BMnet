@@ -1,0 +1,6 @@
+✓ Initialized. View run at https://modal.com/apps/digital-twin/main/ap-jeYBAhPULWedq0Bl63U97d
+✓ Created objects.
+├── ✓ Uploaded /media/shahanahmed/c229a233-ed4f-4f67-9e09-5890e65956f72/BMnet/modal_deployment/test_nomo_weight.py
+├── ✓ Uploaded /media/shahanahmed/c229a233-ed4f-4f67-9e09-5890e65956f72/BMnet/modal_deployment/bmnet.py
+├── ✓ Uploaded /media/shahanahmed/c229a233-ed4f-4f67-9e09-5890e65956f72/BMnet/modal_deployment/bodym_dataset.py
+└── ✓ Created Function sens.

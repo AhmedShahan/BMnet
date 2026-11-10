@@ -1,0 +1,49 @@
+✓ Initialized. View run at https://modal.com/apps/digital-twin/main/ap-jvLZZDQyXwt2J9dZaxjeg9
+✓ Created objects.
+├── ✓ Uploaded /media/shahanahmed/c229a233-ed4f-4f67-9e09-5890e65956f72/BMnet/modal_deployment/test_nomo.py
+├── ✓ Uploaded /media/shahanahmed/c229a233-ed4f-4f67-9e09-5890e65956f72/BMnet/modal_deployment/bmnet.py
+├── ✓ Uploaded /media/shahanahmed/c229a233-ed4f-4f67-9e09-5890e65956f72/BMnet/modal_deployment/bodym_dataset.py
+└── ✓ Created Function test.
+hw_mean (expect [cm, kg]): [171.11282349  74.95061493] | hw_std: [ 9.50634575 16.5780735 ]
+BodyM mask max value: 1 | dtype: torch.uint8
+subjects: 4069
+preprocessed: (4069, 640, 480) (4069, 640, 480)
+/root/test_nomo.py:133: RuntimeWarning: Mean of empty slice.
+  MAE_M=np.abs(e[gm == "male"]).mean()))
+/usr/local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/root/test_nomo.py:132: RuntimeWarning: Mean of empty slice.
+  MAE_F=np.abs(e[gm == "female"]).mean(),
+
+===== side view as-is =====
+          target               gt_col    n   MAE   bias  MAE_debiased  corr  MAE_F  MAE_M
+           ankle           Ankle_Circ 4001  2.46  -2.41          1.53  0.57   2.49   2.41
+      arm-length    Shoulder_to_Wrist 3864 10.77 -10.77          2.01  0.81  10.48  11.27
+           bicep           Bicep_Circ 4027  1.29  -0.38          1.27  0.91   1.18   1.48
+            calf            Calf_Circ 4028  1.14   0.38          1.08  0.91   1.18   1.07
+           chest         CHEST_MERGED 4022  3.15   0.39          3.12  0.93   3.19   3.08
+          height      Head_Top_Height 4027  1.17   0.63          1.11  0.99   1.16   1.19
+             hip             HIP_Circ 4027  2.31   0.62          2.23  0.93   2.09   2.72
+             hip           Hip_2_Circ 2584  3.27  -2.16          2.67  0.90   3.27    NaN
+             hip          TopHip_Circ 2585  6.85   6.11          3.95  0.92   6.85    NaN
+      leg-length               Inseam 4028  3.62  -3.38          2.08  0.85   4.07   2.81
+      leg-length              Outseam 4024 26.67 -26.67          2.94  0.76  28.09  24.10
+shoulder-breadth Shoulder_to_Shoulder 4028  6.29  -6.04          2.55  0.80   5.30   8.08
+shoulder-breadth          Across_Back 4026  2.43  -1.46          2.08  0.79   2.11   3.00
+           thigh           Thigh_Circ 4027  3.96  -3.77          2.04  0.86   4.47   3.05
+           waist    NaturalWAIST_Circ 2495  4.44   3.46          2.95  0.95   4.44    NaN
+           waist    TrouserWAIST_Circ 4023  3.51   1.53          3.28  0.92   3.26   3.96
+           waist        MaxWAIST_Circ 1439  3.75   2.39          3.05  0.95    NaN   3.75
+           wrist           Wrist_Circ 4026  0.76   0.49          0.63  0.85   0.87   0.56
+(MAE/bias in cm; bias = pred - NOMO; MAE_debiased = MAE after removing the mean offset; corr = Pearson r)
+/root/test_nomo.py:133: RuntimeWarning: Mean of empty slice.
+  MAE_M=np.abs(e[gm == "male"]).mean()))
+/usr/local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/root/test_nomo.py:132: RuntimeWarning: Mean of empty slice.
+  MAE_F=np.abs(e[gm == "female"]).mean(),
+
+core-set mean MAE (cm): side as-is = 2.30 | side mirrored = 2.24
+saved /nomo/nomo_predictions_bmnet.csv
+Stopping app - local entrypoint completed.
+✓ App completed. View run at https://modal.com/apps/digital-twin/main/ap-jvLZZDQyXwt2J9dZaxjeg9
