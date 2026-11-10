@@ -9,4 +9,5 @@ wheels/
 # Virtual environments
 .venv
 /Dataset
-/Image_folder
+/Image_foldere
+/results
