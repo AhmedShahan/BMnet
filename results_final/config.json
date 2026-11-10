@@ -1,0 +1,14 @@
+{
+  "run": "bmnet_v2",
+  "iters": 150000,
+  "batch": 22,
+  "lr": 0.001,
+  "eval_every": 1000,
+  "log_every": 100,
+  "pretrained": false,
+  "bn_momentum": 0.01,
+  "seed": 0,
+  "gpu": "H100",
+  "n_train_photos": 5533,
+  "n_val_photos": 601
+}
